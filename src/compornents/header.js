@@ -1,15 +1,15 @@
 import React from 'react';
 import './style.css';
+import { Link } from "react-router-dom";
 
-function Header(){
+export const Header = () => {
     return(
         <header>
-            <h1>HURTAの楽曲まとめ</h1>
             <nav>
-                <a href="index.html">Home</a>
-                <a href="music.html">Music</a>
-                <a href="blog.html">Blog</a>
-                <a href="tool.html">Tool</a>
+                <div>
+                    <Link to = "/">Home</Link>
+                    <Link to = "/music">Music</Link>
+                </div>
             </nav>
         </header>
     )

@@ -13,6 +13,13 @@ footer {
   padding: 10px 0;
 }
 
+.header-title{
+  background-color: #333;
+  color: white;
+  margin: 0;
+  text-align: center;
+}
+
 nav a {
   margin: 0 10px;
   color: white;
@@ -26,7 +33,11 @@ main {
   padding: 10px;
 }
 
-h1,
+h1 {
+  color: #2c7bff;
+  margin: 0;
+}
+
 h2 {
   color: #2c7bff;
 }
@@ -256,4 +267,23 @@ article p {
 .table {
   display: table;
   width: 100%;
+}
+
+/* App.css */
+.main-content {
+  display: flex;
+  flex-direction: row; 
+  justify-content: flex-start; /* 要素を左右に配置 */
+  align-items: flex-start; /* 上揃え */
+  width: 100%;
+}
+
+.page-content {
+  flex-grow: 1; /* ここが横幅いっぱいに広がる */
+  max-width: calc(100% - 180px);
+}
+
+.banner {
+  width: 180px; /* バナーの幅 */
+  height: auto; /* バナーの高さは自動調整 */
 }

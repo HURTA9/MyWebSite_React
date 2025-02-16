@@ -1,14 +1,12 @@
 import React from 'react';
 import './style.css';
 
-function Footer(){
+export const Footer = () => {
+    const currentYear = new Date().getFullYear();
+
     return(
         <footer>
-            <p>&copy; 2024-
-                <script
-                    type="text/javascript">myDate = new Date(); myYear = myDate.getFullYear(); document.write(myYear);</script>
-                HURTA
-            </p>
+            <p>&copy; 2024-{currentYear} HURTA</p>
         </footer>   
     )
 }

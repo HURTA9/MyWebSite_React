@@ -1,13 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Home from './compornents/home';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './pages/home'
+import Music from './pages/music'
+import Header from './compornents/header'
+import Footer from './compornents/footer'
+import Banner from './compornents/banner'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Home />
+    <BrowserRouter>
+        <div className = "header-title">
+            <h1>HURTAの楽曲まとめ</h1>
+        </div>
+        <Header /> 
+        <div className="main-content">
+        
+        <div className="page-content">
+          <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/music" element={<Music />} />
+          </Routes>
+        </div>
+        <Banner /> 
+        
+        </div>
+        <Footer />
+        
+      
+    </BrowserRouter>
   </React.StrictMode>
 );
 
