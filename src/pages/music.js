@@ -1,7 +1,7 @@
 import React from 'react';
 import Track from '../compornents/track'
 
-export const Home = () => {
+export const Music = () => {
     return (
         <>
             <main>
@@ -131,4 +131,4 @@ export const Home = () => {
     )
 }
 
-export default Home;
+export default Music;

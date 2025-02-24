@@ -8,6 +8,7 @@ import Music from './pages/music'
 import Header from './compornents/header'
 import Footer from './compornents/footer'
 import Banner from './compornents/banner'
+import Blog from './pages/blog'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,6 +24,7 @@ root.render(
           <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/music" element={<Music />} />
+              <Route path="/blog" element={<Blog />} />
           </Routes>
         </div>
         <Banner /> 
