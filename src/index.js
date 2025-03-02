@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from './pages/home'
-import Music from './pages/music'
 import Header from './compornents/header'
 import Footer from './compornents/footer'
 import Banner from './compornents/banner'
+import Home from './pages/home'
+import Music from './pages/music'
 import Blog from './pages/blog'
+import Contact from './pages/contact'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,6 +26,7 @@ root.render(
               <Route path="/" element={<Home />} />
               <Route path="/music" element={<Music />} />
               <Route path="/blog" element={<Blog />} />
+              <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
         <Banner /> 

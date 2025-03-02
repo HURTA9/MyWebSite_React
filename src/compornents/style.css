@@ -287,3 +287,17 @@ article p {
   width: 180px; /* バナーの幅 */
   height: auto; /* バナーの高さは自動調整 */
 }
+/*contact.js*/
+.form-group {
+  display: block;
+  align-items: center;
+  gap: 100px;
+}
+.message-box {
+  width: 95%;  /* 幅を100%に広げる */
+  height: 150px; /* 高さを大きくする */
+}
+.contactBackColor{
+  background-color: #e3f9fe;
+  width: 80%;
+}
