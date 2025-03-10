@@ -9,7 +9,8 @@ export const Contact = () => {
     };
 
     return (
-        <form>
+        <main>
+            <form>
             <h2>お問い合わせ</h2>
             <p>楽曲の制作依頼、使用許可等についてはこちらから</p>
             <div className="contactBackColor">
@@ -29,6 +30,8 @@ export const Contact = () => {
             
             <button type="submit">送信</button>
         </form>
+        </main>
+        
     );
 };
 
